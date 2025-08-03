@@ -506,32 +506,47 @@
 
     <!-- Footer -->
     <footer class="py-16 bg-white/95 text-gray-800 relative overflow-hidden">
-        <div class="absolute inset-0 bg-white/95"></div>
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center">
-                        <img src="icon.png" alt="Charity A Day logo" />
-                    </div>
-                    <span class="text-xl font-bold">
-                        Charity A Day
-                    </span>
-                </div>
-                <div class="flex flex-wrap justify-center gap-8 text-gray-800">
-                    <button onclick="openModal('privacy')" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
-                        Privacy Policy
-                    </button>
-                    <button onclick="openModal('terms')" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
-                        Terms of Use
-                    </button>
-                    <a href="mailto:charityadayapp@gmail.com" class="hover:text-black transition-colors hover:scale-105 transform duration-200">Contact</a>
-                </div>
+      <div class="absolute inset-0 bg-white/95"></div>
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center">
+              <img src="icon.png" alt="Charity A Day logo" />
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-800">
-                <p>Charity A Day. Learning about charities, one trivia question at a time.</p>
-            </div>
+            <span class="text-xl font-bold">
+              Charity A Day
+            </span>
+          </div>
+          <div class="flex flex-wrap justify-center gap-8 text-gray-800 items-center">
+            <button onclick="openModal('privacy')" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
+              Privacy Policy
+            </button>
+            <button onclick="openModal('terms')" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
+              Terms of Use
+            </button>
+            <a href="mailto:charityadayapp@gmail.com" class="hover:text-black transition-colors hover:scale-105 transform duration-200">
+              Contact
+            </a>
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/yourinstagramhandle" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors hover:scale-105 transform duration-200 flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-.88a1.12 1.12 0 11-2.25 0 1.12 1.12 0 012.25 0z"/>
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </div>
         </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-800">
+          <p>Charity A Day. Learning about charities, one trivia question at a time.</p>
+          <div class="mt-4 flex justify-center">
+            <a href="https://www.producthunt.com/products/charity-a-day?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-charity&#0045;a&#0045;day" target="_blank" rel="noopener noreferrer">
+              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1000419&theme=dark&t=1754256566288" alt="Charity A Day - Learning about charities through daily trivia. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
+
 
     <!-- Privacy Policy Modal -->
     <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-overlay flex items-center justify-center z-50 p-4 hidden">
