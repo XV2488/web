@@ -49,10 +49,7 @@
             background: linear-gradient(to bottom, #dc2626, #ea580c);
         }
 
-        /* Modal styles */
-        .modal-overlay {
-            backdrop-filter: blur(4px);
-        }
+
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -70,12 +67,14 @@
         <div class="max-w-7xl mx-auto px-6 sm:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-3 animate-slide-down">
-                    <div class="w-12 h-12 rounded-xl flex items-center justify-center hover:transition-all duration-300 hover:scale-110">
-                        <img src="icon.png" alt="Charity A Day logo" class="w-full h-full object-fill"/>
-                    </div>
-                    <span class="text-2xl font-bold text-gray-800">
-                        Charity A Day
-                    </span>
+                    <a href="index.html" class="flex items-center space-x-3 hover:transition-all duration-300 hover:scale-105">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center">
+                            <img src="icon.png" alt="Charity A Day logo" class="w-full h-full object-fill"/>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800 hover:text-red-500 transition-colors">
+                            Charity A Day
+                        </span>
+                    </a>
                 </div>
 
                 <!-- Desktop Navigation -->
@@ -519,12 +518,12 @@
             </span>
           </div>
           <div class="flex flex-wrap justify-center gap-8 text-gray-800 items-center">
-            <button onclick="openModal('privacy')" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
+            <a href="privacy.html" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
               Privacy Policy
-            </button>
-            <button onclick="openModal('terms')" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
+            </a>
+            <a href="terms.html" class="hover:text-black transition-colors hover:scale-105 transform duration-200 cursor-pointer">
               Terms of Use
-            </button>
+            </a>
             <a href="mailto:charityadayapp@gmail.com" class="hover:text-black transition-colors hover:scale-105 transform duration-200">
               Contact
             </a>
@@ -543,190 +542,9 @@
     </footer>
 
 
-    <!-- Privacy Policy Modal -->
-    <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-overlay flex items-center justify-center z-50 p-4 hidden">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-hidden">
-            <div class="flex justify-between items-center p-6 border-b">
-                <h2 class="text-2xl font-bold text-gray-800">Privacy Policy</h2>
-                <button onclick="closeModal('privacy')" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
-            <div class="p-6 overflow-y-auto max-h-[60vh]">
-                <div class="space-y-4 text-gray-700 text-sm">
-                    <p><strong>Last updated:</strong> July 31, 2025</p>
-                    
-                    <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-                    
-                    <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Interpretation and Definitions</h3>
-                    <h4 class="text-base font-semibold text-gray-800">Definitions</h4>
-                    <p>For the purposes of this Privacy Policy:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li><strong>Company</strong> refers to Charity A Day.</li>
-                        <li><strong>Country</strong> refers to: Michigan, United States</li>
-                        <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
-                        <li><strong>Service</strong> refers to the Website.</li>
-                        <li><strong>Website</strong> refers to Charity A Day, accessible from <a href="https://charityaday.app" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://charityaday.app</a></li>
-                    </ul>
 
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Collecting and Using Your Personal Data</h3>
-                    <h4 class="text-base font-semibold text-gray-800">Types of Data Collected</h4>
-                    
-                    <h5 class="font-semibold text-gray-800">Usage Data</h5>
-                    <p>Usage Data is collected automatically when using the Service.</p>
-                    <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
 
-                    <h5 class="font-semibold text-gray-800">Google Analytics</h5>
-                    <p>We use Google Analytics, a web analytics service provided by Google Inc. ("Google"). Google Analytics uses cookies to help us analyze how users use our Service. The information generated by the cookie about your use of the Service (including your IP address) will be transmitted to and stored by Google on servers in the United States.</p>
-                    <p>Google will use this information for the purpose of evaluating your use of our Service, compiling reports on website activity for us and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf.</p>
-                    <p>You may refuse the use of cookies by selecting the appropriate settings on your browser. You can also opt-out from being tracked by Google Analytics by downloading and installing the Google Analytics Opt-out Browser Add-on available at: <a href="https://tools.google.com/dlpage/gaoptout" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a></p>
-
-                    <h5 class="font-semibold text-gray-800">Tracking Technologies and Cookies</h5>
-                    <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. The technologies We use may include:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li><strong>Cookies or Browser Cookies:</strong> A cookie is a small file placed on Your Device. We use cookies for Google Analytics and to improve your experience on our Service.</li>
-                        <li><strong>Web Beacons:</strong> Small electronic files that permit the Company to count users who have visited pages.</li>
-                        <li><strong>Google Analytics Cookies:</strong> These cookies are used to collect information about how visitors use our website, which we use to help improve it. The cookies collect information in an anonymous form, including the number of visitors to the website, where visitors have come to the website from and the pages they visited.</li>
-                    </ul>
-
-                    <h4 class="text-base font-semibold text-gray-800 mt-4">Use of Your Personal Data</h4>
-                    <p>The Company may use Personal Data for the following purposes:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li>To provide and maintain our Service</li>
-                        <li>To manage Your Account</li>
-                        <li>To contact You with updates or communications</li>
-                        <li>To provide You with news and information about our services</li>
-                        <li>To manage Your requests</li>
-                        <li>For data analysis and service improvement using Google Analytics</li>
-                        <li>To monitor the usage of our Service and analyze user behavior patterns</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Third-Party Services</h3>
-                    <p>Our Service may employ third-party services that have their own Privacy Policies:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li><strong>Google Analytics:</strong> For more information about Google's privacy practices, please visit the Google Privacy & Terms web page: <a href="https://policies.google.com/privacy" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Data Retention</h3>
-                    <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our legal agreements and policies.</p>
-                    <p>Google Analytics data is retained for 26 months by default, after which it is automatically deleted.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Your Privacy Rights</h3>
-                    <p>You have certain rights regarding your personal data:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li>The right to access, update or delete the information we have on you</li>
-                        <li>The right to rectification if your information is inaccurate or incomplete</li>
-                        <li>The right to opt-out of Google Analytics tracking</li>
-                        <li>The right to disable cookies in your browser settings</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Security of Your Personal Data</h3>
-                    <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Children's Privacy</h3>
-                    <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Changes to this Privacy Policy</h3>
-                    <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Contact Us</h3>
-                    <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>By email: <a href="mailto:charityadayapp@gmail.com" class="text-blue-600 hover:underline">charityadayapp@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Terms of Use Modal -->
-    <div id="terms-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-overlay flex items-center justify-center z-50 p-4 hidden">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-hidden">
-            <div class="flex justify-between items-center p-6 border-b">
-                <h2 class="text-2xl font-bold text-gray-800">Terms and Conditions</h2>
-                <button onclick="closeModal('terms')" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
-            <div class="p-6 overflow-y-auto max-h-[60vh]">
-                <div class="space-y-4 text-gray-700 text-sm">
-                    <p><strong>Last updated:</strong> July 31, 2025</p>
-                    
-                    <p>Please read these terms and conditions carefully before using Our Service.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Definitions</h3>
-                    <p>For the purposes of these Terms and Conditions:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li><strong>Company</strong> refers to Charity A Day.</li>
-                        <li><strong>Country</strong> refers to: Michigan, United States</li>
-                        <li><strong>Service</strong> refers to the Website.</li>
-                        <li><strong>Website</strong> refers to Charity A Day, accessible from <a href="https://charityaday.app" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://charityaday.app</a></li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Acknowledgment</h3>
-                    <p>These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions.</p>
-                    
-                    <p>By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.</p>
-                    
-                    <p><strong>You represent that you are over the age of 18.</strong> The Company does not permit those under 18 to use the Service.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Use of Analytics</h3>
-                    <p>Our Service uses Google Analytics to collect and analyze information about how users interact with our website. By using our Service, you consent to the processing of data about you by Google in the manner and for the purposes set out in our Privacy Policy.</p>
-                    
-                    <p>We use this analytics data to:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li>Understand how visitors use our website</li>
-                        <li>Improve our Service and user experience</li>
-                        <li>Generate reports on website activity and performance</li>
-                        <li>Monitor and prevent fraudulent activity</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Acceptable Use</h3>
-                    <p>You agree to use our Service only for lawful purposes and in accordance with these Terms. You agree not to:</p>
-                    <ul class="list-disc list-inside ml-4 space-y-1">
-                        <li>Use the Service in any way that violates applicable federal, state, local, or international law</li>
-                        <li>Attempt to interfere with or disrupt our analytics and tracking systems</li>
-                        <li>Use any robot, spider, or automated means to access the Service</li>
-                        <li>Attempt to gain unauthorized access to any portion of the Service</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Data Collection and Privacy</h3>
-                    <p>Your use of our Service is subject to our Privacy Policy, which explains how we collect, use, and protect your information, including data collected through Google Analytics. By using our Service, you consent to such processing and you warrant that all data provided by you is accurate.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Links to Other Websites</h3>
-                    <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company. The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services, including Google Analytics.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Intellectual Property Rights</h3>
-                    <p>The Service and its original content, features and functionality are and will remain the exclusive property of Charity A Day and its licensors. The Service is protected by copyright, trademark, and other laws.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Termination</h3>
-                    <p>We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.</p>
-                    
-                    <p>Upon termination, Your right to use the Service will cease immediately, though analytics data previously collected may be retained in accordance with our Privacy Policy and Google's data retention policies.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Limitation of Liability</h3>
-                    <p>To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever arising out of or in any way related to the use of or inability to use the Service, including but not limited to damages related to the collection or use of analytics data.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">"AS IS" and "AS AVAILABLE" Disclaimer</h3>
-                    <p>The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. The Company provides no warranty that the Service will meet Your requirements or be error free, including the accuracy of any analytics or data collection.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Governing Law</h3>
-                    <p>The laws of Michigan, United States, excluding its conflicts of law rules, shall govern these Terms and Your use of the Service. Your use of our Service may also be subject to other local, state, national, or international laws.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Changes to These Terms and Conditions</h3>
-                    <p>We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.</p>
-
-                    <h3 class="text-lg font-semibold text-gray-800 mt-6">Contact Us</h3>
-                    <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>By email: <a href="mailto:charityadayapp@gmail.com" class="text-blue-600 hover:underline">charityadayapp@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script>
         // Initialize Lucide icons
@@ -794,48 +612,7 @@
             }, 150);
         }
 
-        // Modal functionality
-        function openModal(type) {
-            const modal = document.getElementById(type + '-modal');
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
 
-        function closeModal(type) {
-            const modal = document.getElementById(type + '-modal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('modal-overlay')) {
-                const privacyModal = document.getElementById('privacy-modal');
-                const termsModal = document.getElementById('terms-modal');
-                
-                if (!privacyModal.classList.contains('hidden')) {
-                    closeModal('privacy');
-                }
-                if (!termsModal.classList.contains('hidden')) {
-                    closeModal('terms');
-                }
-            }
-        });
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                const privacyModal = document.getElementById('privacy-modal');
-                const termsModal = document.getElementById('terms-modal');
-                
-                if (!privacyModal.classList.contains('hidden')) {
-                    closeModal('privacy');
-                }
-                if (!termsModal.classList.contains('hidden')) {
-                    closeModal('terms');
-                }
-            }
-        });
 
         // Initialize typing effect when page loads
         window.addEventListener('load', function() {
@@ -850,5 +627,3 @@
     </script>
 </body>
 </html>
-
-                        <div class="flex items-center space-x-3 group hover:scale-105
